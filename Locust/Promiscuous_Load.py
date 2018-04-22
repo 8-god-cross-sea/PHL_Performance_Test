@@ -21,15 +21,15 @@ class PromiscuousScene(TaskSet):
         #self.client.get("/api/user/logout")
         pass
 
-    @task(1)
+    @task(10)
     def user_get(self):
         self.client.get("/api/user/")
 
-    @task(1)
+    @task(10)
     def department_get(self):
         self.client.get("/api/department/")
 
-    @task(1)
+    @task(10)
     def department_getid(self):
         #id = random.randint(1, 100)
         id=1
@@ -40,11 +40,11 @@ class PromiscuousScene(TaskSet):
         headers = {'content-type': 'application/json'}
         self.client.post("/api/department/", data=json.dumps({"name": "LoadTest", "description": "LoadTest"}),headers=headers)
 
-    @task(1)
+    @task(10)
     def medicine_get(self):
         self.client.get("/api/medicine/")
 
-    @task(1)
+    @task(10)
     def medicine_getid(self):
         #id=random.randint(1,100)
         id=1
