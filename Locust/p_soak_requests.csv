@@ -1,0 +1,9 @@
+"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
+"GET","/api/department/",228429,1,85,95,16,2655,1955,63.53
+"POST","/api/department/",22887,0,79,89,14,2292,67,6.37
+"GET","/api/department/1",228845,3,73,83,10,1241,150,63.64
+"GET","/api/medicine/",230040,2,86,97,17,5362,2632,63.98
+"POST","/api/medicine/",22838,0,79,89,14,1116,102,6.35
+"GET","/api/medicine/1",228078,2,73,83,10,2302,86,63.43
+"GET","/api/user/",227350,3,78,89,13,2265,582,63.23
+"None","Total",1188467,11,79,89,10,5362,1045,330.52
